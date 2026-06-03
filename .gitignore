@@ -1,0 +1,69 @@
+# ── Environment & Secrets ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.production.local
+.env.development.local
+
+# ── Python (Backend) ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Database (local SQLite — Turso is used in production)
+*.db
+*.sqlite
+*.sqlite3
+
+# Local file uploads (Cloudflare R2 is used in production)
+backend/uploads/
+
+# Alembic (if used)
+alembic/versions/*.py
+
+# ── Node.js (Frontend) ────────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+
+# Build output
+dist/
+frontend/dist/
+build/
+
+# Vite cache
+.vite/
+frontend/.vite/
+
+# ── OS & Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Logs & Debug ─────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pip-log.txt
+
+# ── Misc ─────────────────────────────────────────────────────────────────────
+.cache/
+*.egg-info/
+.eggs/
+coverage/
+.coverage
+htmlcov/
